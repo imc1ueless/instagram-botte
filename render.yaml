@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: instagram-botter
+    env: python
+    buildCommand: "pip install --upgrade pip"
+    startCommand: "python instagram_botter.py"
+    plan: free
